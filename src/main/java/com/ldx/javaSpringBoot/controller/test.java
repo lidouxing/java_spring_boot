@@ -11,6 +11,6 @@ public class test {
     @RequestMapping("controller")
     @ResponseBody
     public String test(){
-        return "this is first boot";
+        return "this is new boot";
     }
 }
