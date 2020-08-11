@@ -11,11 +11,6 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
 
-/**
- * @Description TestController
- * @Author HymanHu
- * @Date 2020/8/10 10:39
- */
 @Controller
 @RequestMapping("/test")
 public class test {
