@@ -1,7 +1,7 @@
-package com.ldx.javaSpringBoot.controller;
+package com.ldx.javaSpringBoot.modules.test.controller;
 
 
-import com.ldx.javaSpringBoot.vo.ApplicatonTest;
+import com.ldx.javaSpringBoot.modules.test.vo.ApplicatonTest;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;

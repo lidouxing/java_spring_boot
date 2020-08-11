@@ -1,4 +1,4 @@
-package com.ldx.javaSpringBoot.vo;
+package com.ldx.javaSpringBoot.modules.test.vo;
 
 import org.springframework.boot.context.properties.ConfigurationProperties;
 import org.springframework.context.annotation.PropertySource;
