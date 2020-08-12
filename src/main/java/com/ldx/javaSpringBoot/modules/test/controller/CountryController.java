@@ -21,6 +21,7 @@ public class CountryController {
     public Country getCountryByCountryId(@PathVariable int countryId){
         return countryService.getCountryByCountryId(countryId);
     }
+    
     //@RequestParam()使用方式
     @RequestMapping("/country")
     public Country getCountryByCountryName(@RequestParam String countryName){
