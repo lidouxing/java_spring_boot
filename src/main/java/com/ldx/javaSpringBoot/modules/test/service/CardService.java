@@ -5,4 +5,6 @@ import com.ldx.javaSpringBoot.modules.test.entity.Card;
 
 public interface CardService {
     Result<Card> addCard(Card card);
+
+//    Card selectCard(int cardId);
 }

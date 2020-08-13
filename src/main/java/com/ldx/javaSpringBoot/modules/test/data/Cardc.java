@@ -6,5 +6,4 @@ import org.springframework.stereotype.Repository;
 
 @Repository
 public interface Cardc extends JpaRepository<Card,Integer> {
-    void addCard(Card card);
 }
