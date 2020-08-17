@@ -2,11 +2,9 @@ package com.ldx.javaSpringBoot.modules.test.controller;
 
 import com.ldx.javaSpringBoot.modules.test.entity.Country;
 import com.ldx.javaSpringBoot.modules.test.service.CountryService;
+import com.sun.imageio.plugins.common.I18N;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestParam;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 import javax.websocket.server.PathParam;
 
@@ -27,4 +25,11 @@ public class CountryController {
     public Country getCountryByCountryName(@RequestParam String countryName){
         return countryService.getCountryByCountryName(countryName);
     }
+
+    //redis 127.0.0.1/redis/country/522
+    @GetMapping("/redis/country/{countryId}")
+    public Country mograteCountryByRedis(@PathVariable int countryId){
+        return countryService.mograteCountryByRedis(countryId);
+    }
+
 }

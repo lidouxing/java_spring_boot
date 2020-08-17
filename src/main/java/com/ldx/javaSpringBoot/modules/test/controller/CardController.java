@@ -17,8 +17,8 @@ public class CardController {
         return cardService.addCard(card);
     }
 
-    @GetMapping(value = "/cards/{cardId}")
-    public Card selectCard(@PathVariable int cardId){
-        return cardService.selectCard(cardId);
-    }
+//    @GetMapping(value = "/cards/{cardId}")
+//    public Card selectCard(@PathVariable int cardId){
+//        return cardService.selectCard(cardId);
+//    }
 }
