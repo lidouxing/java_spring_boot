@@ -14,8 +14,10 @@ import org.springframework.stereotype.Controller;
 import org.springframework.ui.ModelMap;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.ResponseBody;
 
+import javax.servlet.http.HttpServletRequest;
 import java.util.List;
 import java.util.stream.Collectors;
 
@@ -41,26 +43,26 @@ public class test {
     private CountryService countryService;
 
     //返回到主页面
-    @GetMapping("/index")
-    public String index(){
-        return "index";
-    }
+//    @GetMapping("/index")
+//    public String index(){
+//        return "index";
+//    }
 
     //返回到碎片化主页面
-    @GetMapping("/index2")
-    public String index2(ModelMap modelMap){
-        modelMap.addAttribute("template", "test/index2");
-        return "index2";
-    }
+//    @GetMapping("/index2")
+//    public String index2(ModelMap modelMap){
+//        modelMap.addAttribute("template", "test/index2");
+//        return "index2";
+//    }
     
     @GetMapping("/testindex1")
-    public String testindex(ModelMap modelMap){
+    public String testindex1(ModelMap modelMap){
         modelMap.addAttribute("thymeleafTitle","ThymeleafText");
         modelMap.addAttribute("template", "test/index");
         return "index2";
     }
-
-    @GetMapping("/testindex2")
+    //127.0.0.1/test/index2  /test/index2请求路径和文件访问路径/test/index2.html一样
+    @GetMapping("/index2")
     public String testindex2(ModelMap modelMap) {
         int countryId = 522;
         List<City> cities = cityService.getCitiesByCountryId(countryId);
@@ -75,8 +77,8 @@ public class test {
         modelMap.addAttribute("country", country);
         modelMap.addAttribute("cities", cities);
         modelMap.addAttribute("updateCityUri", "/api/city");
-        modelMap.addAttribute("template", "test/index");
-        return "index";
+//        modelMap.addAttribute("template", "test/index");
+        return "index2";
     }
     /**
      * 127.0.0.1:8085/test/logTest ---- get
@@ -114,11 +116,12 @@ public class test {
     }
 
     /**
-     * 127.0.0.1:8080/test/testDesc ---- get
+     * 127.0.0.1/test/testDesc?paramKey=fuck ---- get
      */
     @GetMapping("/testDesc")
-    @ResponseBody
-    public String testDesc() {
-        return "This is test module desc.";
+    @ResponseBody// @RequestParam(value = "paramKey")这个是因为后面的.getParameter("paramKey");无法取到String paramValue的值
+    public String testDesc(HttpServletRequest request, @RequestParam(value = "paramKey")  String paramValue) {
+        String paramValue2=request.getParameter("paramKey");
+        return "This is test module desc."+paramValue+"=="+paramValue2;
     }
 }
