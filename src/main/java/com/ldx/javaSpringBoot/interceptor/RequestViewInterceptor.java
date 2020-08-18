@@ -10,7 +10,7 @@ import org.springframework.web.servlet.ModelAndView;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-//设置为主键,并没有有拦截功能，所以需要去注册
+//设置为主键,并没有有拦截功能，所以需要去注册，到webmvcconfig
 @Component
 public class RequestViewInterceptor implements HandlerInterceptor {
 

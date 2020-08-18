@@ -1,3 +1,23 @@
+<h3>文件上传和下载</h3>
+<a href="/test/file?fileName=xxx.png">download file</a>
+<br>
+<p th:text="${message}"></p>
+<p>文件上传</p>
+<form action="/test/file" method="post" enctype="multipart/form-data">
+    <input type="file" name="file">
+    <button type="submit">上传</button>
+</form>
+
+<form action="/test/files" method="post" enctype="multipart/form-data">
+    <input type="file" name="files">
+    <input type="file" name="files">
+    <button type="submit">上传</button>
+</form>
+<p>+++++++++++++++++++++++++++++++++++++++=</p>
+
+
+
+
 <h3>th:text</h3>
 <!--${thymeleafTitle}进行取值，如果有就得到$thymeleafTitle}，h1标题标签，p是段落标签
 ，h1标题标签，p是段落标签-->
