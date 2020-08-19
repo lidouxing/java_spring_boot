@@ -10,6 +10,6 @@ public class AccountController {
     //??
     @GetMapping("/user")
     public String userPage(){
-        return "index2";
+        return "index";
     }
 }

@@ -67,10 +67,10 @@ public class test {
     public String testindex1(ModelMap modelMap){
         modelMap.addAttribute("thymeleafTitle","ThymeleafText");
         modelMap.addAttribute("template", "test/index");
-        return "index2";
+        return "indexSimple";
     }
     //127.0.0.1/test/index2  /test/index2请求路径和文件访问路径/test/index2.html一样
-    @GetMapping("/index2")
+    @GetMapping("/index")
     public String testindex2(ModelMap modelMap) {
         int countryId = 522;
         List<City> cities = cityService.getCitiesByCountryId(countryId);
@@ -86,7 +86,12 @@ public class test {
         modelMap.addAttribute("cities", cities);
         modelMap.addAttribute("updateCityUri", "/api/city");
 //        modelMap.addAttribute("template", "test/index");
-        return "index2";
+        return "index";
+    }
+
+    @GetMapping("/indexSimple")
+    public String indexSimple(){
+        return "indexSimple";
     }
     /**
      * 127.0.0.1:8085/test/logTest ---- get
@@ -123,6 +128,8 @@ public class test {
 
     }
 
+
+
     /**
      * 127.0.0.1/test/testDesc?paramKey=fuck ---- get
      */
@@ -151,12 +158,12 @@ public class test {
       //判断文件是否存在
         if (file.isEmpty()){
           redirectAttributes.addFlashAttribute("message","please select file");//传到前端的message出现的字段
-          return "redirect:/test/index2";
+          return "redirect:/test/index";
       }
         //当文件上传出现问题跑出异常
        try {
            String filePath="F:\\File\\"+file.getOriginalFilename();//写文件路径以及文件名
-           File file1=new File(filePath);//需要路径
+           File file1=new File(filePath);//需要路径,用file对象
            file.transferTo(file1);//拷贝
        }catch (IOException e){
            e.printStackTrace();
@@ -164,14 +171,14 @@ public class test {
        }
         redirectAttributes.addFlashAttribute("message","upload success");
        //重定向
-        return "redirect:/test/index2";
+        return "redirect:/test/index";
     }
 
     //多个文件上传
     /**
      * 步骤
      * 1 多个文件上传需要数组，页面可以上传一个以及上传多个，以此来做判断
-     * 2 先对数组进行判断，如果文件是空的就跳出循环，进行下一个循环，如果文件都是空的，那么
+     * 2 先对数组进行判断，如果文件是空的就跳出循环，并且不执行文件拷贝（这样emtry = true），进行下一个循环，如果文件都是空的，那么
      * Boolean判断就会指示选择文件（即没有文件上传的），如果哪怕只有一个数组中存在，就会执行到
      * 拷贝命令行，这时的emtry就成为false，这样就提示上传成功
      * */
@@ -200,7 +207,7 @@ public class test {
             e.printStackTrace();
             redirectAttributes.addFlashAttribute("message", "upload failed");
         }
-        return "redirect:/test/index2";
+        return "redirect:/test/index";
     }
 
     //文件下载
@@ -228,73 +235,75 @@ public class test {
         return null;
     }
 
-//    /**
-//     * 将文件以BufferedInputStream的方式读取到byte[]里面，然后用OutputStream.write输出文件
-//     */
-//    @RequestMapping("/download1")
-//    public void downloadFile1(HttpServletRequest request,
-//                              HttpServletResponse response, @RequestParam String fileName) {
-//        String filePath = "F:\\File\\" + File.separator + fileName;
-//        File downloadFile = new File(filePath);
-//
-//        if (downloadFile.exists()) {
-//            response.setContentType("application/octet-stream");
-//            response.setContentLength((int)downloadFile.length());
-//            response.setHeader(HttpHeaders.CONTENT_DISPOSITION,
-//                    String.format("attachment; filename=\"%s\"", fileName));
-//
-//            byte[] buffer = new byte[1024];
-//            FileInputStream fis = null;
-//            BufferedInputStream bis = null;
-//            try {
-//                fis = new FileInputStream(downloadFile);
-//                bis = new BufferedInputStream(fis);
-//                OutputStream os = response.getOutputStream();
-//                int i = bis.read(buffer);
-//                while (i != -1) {
-//                    os.write(buffer, 0, i);
-//                    i = bis.read(buffer);
-//                }
-//            } catch (Exception e) {
-//                LOGGER.debug(e.getMessage());
-//                e.printStackTrace();
-//            } finally {
-//                try {
-//                    if (fis != null) {
-//                        fis.close();
-//                    }
-//                    if (bis != null) {
-//                        bis.close();
-//                    }
-//                } catch (Exception e2) {
-//                    LOGGER.debug(e2.getMessage());
-//                    e2.printStackTrace();
-//                }
-//            }
-//        }
-//    }
-//
-//    /**
-//     * 包装类 IOUtils 输出文件
-//     */
-//    @RequestMapping("/download2")
-//    public void downloadFile2(HttpServletRequest request,
-//                              HttpServletResponse response, @RequestParam String fileName) {
-//        String filePath ="F:\\File\\" + File.separator + fileName;
-//        File downloadFile = new File(filePath);
-//        try {
-//            if (downloadFile.exists()) {
-//                response.setContentType("application/octet-stream");
-//                response.setContentLength((int)downloadFile.length());
-//                response.setHeader(HttpHeaders.CONTENT_DISPOSITION,
-//                        String.format("attachment; filename=\"%s\"", fileName));
-//                InputStream is = new FileInputStream(downloadFile);
-//                IOUtils.copy(is, response.getOutputStream());
-//                response.flushBuffer();
-//            }
-//        } catch (Exception e) {
-//            LOGGER.debug(e.getMessage());
-//            e.printStackTrace();
-//        }
-//    }
+    /**
+     * 将文件以BufferedInputStream的方式读取到byte[]里面，然后用OutputStream.write输出文件
+     */
+    @RequestMapping("/download1")
+    public void downloadFile1(HttpServletRequest request,
+                              HttpServletResponse response, @RequestParam String fileName) {
+        //获得路径名和文件名
+        String filePath = "F:\\File\\" + File.separator + fileName;
+        File downloadFile = new File(filePath);
+//判断是否存在
+        if (downloadFile.exists()) {
+            //设置下载的一个类型
+            response.setContentType("application/octet-stream");
+            response.setContentLength((int)downloadFile.length());
+            response.setHeader(HttpHeaders.CONTENT_DISPOSITION,
+                    String.format("attachment; filename=\"%s\"", fileName));
+
+            byte[] buffer = new byte[1024];
+            FileInputStream fis = null;
+            BufferedInputStream bis = null;
+            try {
+                fis = new FileInputStream(downloadFile);
+                bis = new BufferedInputStream(fis);
+                OutputStream os = response.getOutputStream();
+                int i = bis.read(buffer);
+                while (i != -1) {
+                    os.write(buffer, 0, i);
+                    i = bis.read(buffer);
+                }
+            } catch (Exception e) {
+                LOGGER.debug(e.getMessage());
+                e.printStackTrace();
+            } finally {
+                try {
+                    if (fis != null) {
+                        fis.close();
+                    }
+                    if (bis != null) {
+                        bis.close();
+                    }
+                } catch (Exception e2) {
+                    LOGGER.debug(e2.getMessage());
+                    e2.printStackTrace();
+                }
+            }
+        }
+    }
+
+    /**
+     * 包装类 IOUtils 输出文件
+     */
+    @RequestMapping("/download2")
+    public void downloadFile2(HttpServletRequest request,
+                              HttpServletResponse response, @RequestParam String fileName) {
+        String filePath ="F:\\File\\" + File.separator + fileName;
+        File downloadFile = new File(filePath);
+        try {
+            if (downloadFile.exists()) {
+                response.setContentType("application/octet-stream");
+                response.setContentLength((int)downloadFile.length());
+                response.setHeader(HttpHeaders.CONTENT_DISPOSITION,
+                        String.format("attachment; filename=\"%s\"", fileName));
+                InputStream is = new FileInputStream(downloadFile);
+                IOUtils.copy(is, response.getOutputStream());
+                response.flushBuffer();
+            }
+        } catch (Exception e) {
+            LOGGER.debug(e.getMessage());
+            e.printStackTrace();
+        }
+    }
 }
