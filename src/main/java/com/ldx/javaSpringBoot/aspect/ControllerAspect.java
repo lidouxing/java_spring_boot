@@ -19,9 +19,9 @@ public class ControllerAspect {
     private final static Logger LOGGER = LoggerFactory.getLogger(ControllerAspect.class);
 
     /**
-     * 关联在方法上的切点
-     * 第一个*代表返回类型不限
-     * 第二个*代表module下所有子包
+     * 关联在方法上的切点11
+     * 第一个*代表返回类型不限22
+     * 第二个*代表module下所有子包33
      * 第三个*代表所有类
      * 第四个*代表所有方法
      * (..) 代表参数不限
@@ -29,7 +29,7 @@ public class ControllerAspect {
      */
     //得到控制器里面所有的内容
     @Pointcut("execution(public * com.ldx.javaSpringBoot.modules.*.controller.*.*(..))")
-    //优先级
+    //优先级111
     @Order(1)
     public void controllerPointCut() {}
     //通知书写,前置后置不需要return

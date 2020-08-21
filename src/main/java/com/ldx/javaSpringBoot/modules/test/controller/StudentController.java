@@ -9,7 +9,6 @@ import org.springframework.data.domain.Page;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.*;
 
-import java.security.PublicKey;
 import java.util.List;
 
 @Controller
@@ -19,7 +18,7 @@ public class StudentController {
     @Autowired
     private StudentService studentService;
   //127.0.0.1/api/student ---- post
-//{"studentName":"hujiang1","studentCard":{"cardId":"1"}}
+//{"studentName":"ldx","studentCard":{"cardId":"1"}}
     @PostMapping(value = "student",consumes = "application/json")
     public Result<Student> addStudent(@RequestBody Student student){
         return studentService.addStudent(student);
@@ -27,7 +26,7 @@ public class StudentController {
 
     //分页查询
     //127.0.0.1/api/student ---- post
-    //{"studentName":"hujiang1","studentCard":{"cardId":"1"}}
+    //{"studentName":"ldx","studentCard":{"cardId":"1"}}
     @PostMapping(value = "students",consumes = "application/json")
     public Page<Student> getStudentBySearchVo(@RequestBody  SearchVo searchVo) {
         return studentService.getStudentBySearchVo(searchVo);
@@ -50,5 +49,10 @@ public class StudentController {
 //    public List<Student> getStudentsByParams(@RequestParam String studentName,
 //                                             @RequestParam(required = false,defaultValue = "1") Integer cardId){
 //        return studentService.selectByStudentNameLike(studentName,cardId);
+//    }
+//    @RequestMapping("/login")
+//    public String loginStudent(){
+//     String login=   studentService.loginStudent();
+//     return "mine/login/login";
 //    }
 }
