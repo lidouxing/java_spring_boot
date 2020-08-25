@@ -335,7 +335,7 @@ function init_flot_chart() {
 
     if (typeof ($.plot) === 'undefined') { return; }
 
-    console.log('init_flot_chart');
+//    console.log('init_flot_chart');
     var randNum = function () {
         return (Math.floor(Math.random() * (1 + 40 - 20))) + 20;
     };
@@ -5036,4 +5036,25 @@ $(document).ready(function () {
     init_autosize();
     init_autocomplete();
 
-});	
+});
+
+/*==================================================================*/
+var DEFAULT_PAGE_SIZE = 5;
+
+function initRoles(rolesDivId, roleElementName) {
+    $.ajax({
+        url : "/api/roles",
+        type : "get",
+        success : function (rs) {
+            var rolesDiv = $("#" + rolesDivId);
+            rolesDiv.empty();
+            $.each(rs, function(i, item) {
+                rolesDiv.append("<input type='checkbox' name='" + roleElementName
+                    + "' value='"+ item.roleId + "'/>" + item.roleName + " ");
+            });
+        },
+        error : function (data) {
+            layer.alert(data.responseText, {icon: 0});
+        }
+    });
+}

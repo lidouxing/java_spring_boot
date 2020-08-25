@@ -59,4 +59,6 @@ public class Role {
 	public void setResources(List<Resource> resources) {
 		this.resources = resources;
 	}
+
+
 }

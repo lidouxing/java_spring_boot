@@ -44,8 +44,13 @@ public class Result<T> {
         this.object = object;
     }
 
+    /**
+     * @Description ResultStatus
+     * @Author HymanHu
+     * @Date 2020/8/12 10:02
+     */
     public enum ResultStatus {
-        SUCCESS(200), FAILD(500);
+        SUCCESS(200), FAILED(500);
         public int status;
 
         ResultStatus(int status) {

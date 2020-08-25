@@ -17,11 +17,10 @@ import java.util.Arrays;
 @Component
 public class ControllerAspect {
     private final static Logger LOGGER = LoggerFactory.getLogger(ControllerAspect.class);
-
     /**
-     * 关联在方法上的切点11
-     * 第一个*代表返回类型不限22
-     * 第二个*代表module下所有子包33
+     * 关联在方法上的切点
+     * 第一个*代表返回类型不限
+     * 第二个*代表module下所有子包
      * 第三个*代表所有类
      * 第四个*代表所有方法
      * (..) 代表参数不限
@@ -61,5 +60,4 @@ public class ControllerAspect {
     public void afterController() {
         LOGGER.debug("==== This is after controller ====");
     }
-
 }

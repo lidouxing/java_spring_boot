@@ -1,5 +1,8 @@
 <!DOCTYPE html>
-<html  xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org"
+<html  xmlns="http://www.w3.org/1999/xhtml"
+       xmlns:th="http://www.thymeleaf.org"
+       xmlns:v-bind="http://www.w3.org/1999/xhtml"
+       xmlns:shiro="http://www.pollix.at/thymeleaf/shiro"
        lang="en">
 <head>
     <meta charset="UTF-8">
@@ -15,18 +18,19 @@
     <!-- 引入js -->
     <script th:src="${'/plugin/jquery/jquery.min.js'}" type="text/javascript"></script>
     <script th:src="${'/plugin/bootstrap/js/bootstrap.bundle.min.js'}" type="text/javascript"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js" type="text/javascript"></script>
     <!-- layer -->
     <script th:src="@{https://cdn.bootcss.com/layer/2.1/layer.js}"
             type="text/javascript"></script>
 </head>
-<body class="login"> <!-- 引入account/login的页面 -->
-<div>
-    <!-- body content -->
-    <div th:if="${template}">
-        <div th:replace="${template}"></div>
+<body class="login">
+    <div>
+        <!-- body content -->
+        <div th:if="${template}">
+            <div th:replace="${template}"></div>
+        </div>
     </div>
-</div>
-<!-- 引入 js -->
-<script th:src="${'/js/custom.min.js'}" type="text/javascript"></script>
+    <!-- 引入 js -->
+    <script th:src="${'/js/custom.min.js'}" type="text/javascript"></script>
 </body>
 </html>

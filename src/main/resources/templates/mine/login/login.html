@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div id="forms”>
+        <form id="form1" action="/" method="post">
+<p>用户名：<input name="userName" type="text" id="username" value="" /></p>
+<p>密 码：<input name="password" type="password" id="password" value="" /></p>
+<p><input type="submit" value="确认">&nbsp<input type="reset" value="重置"></p>
+</form>
+
+</div>
+<div id="forms">
+    <form id="form1">
+        <p>用户名：<input name="userName" type="text" id="userName" value="" /></p>
+        <p>密 码：<input name="password" type="password" id="password" value="" /></p>
+        <p><input type="button" id="btn" value="登录">&nbsp<input type="reset" value="重置"></p>
+    </form>
+</div>
+<script type="text/javascript">
+    $("#btn").click(function () {
+        $.ajax({
+            type: "POST",      //提交的方法
+            url:"/user/login", //提交的地址
+            data:$("#form1").serialize(), //序列化表单值输出
+            async: false,
+            error: function(request) {  //失败的话
+                alert("提交失败 error");
+            },
+            success: function(data) {  //成功
+                alert(data);  //就将返回的数据显示出来
+                window.location.href="跳转页面"
+            }
+        });
+    });
+</script>
+</form>
+</body>
+</html>

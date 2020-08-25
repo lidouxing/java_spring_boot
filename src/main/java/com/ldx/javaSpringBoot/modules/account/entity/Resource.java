@@ -16,14 +16,14 @@ import javax.persistence.Transient;
  */
 @Entity
 @Table(name = "resource")
-public class Resource {
+	public class Resource {
 
-	@Id
-	@GeneratedValue(strategy = GenerationType.IDENTITY)
-	private int resourceId;
-	private String resourceUri;
-	private String resourceName;
-	private String permission;
+		@Id
+		@GeneratedValue(strategy = GenerationType.IDENTITY)
+		private int resourceId;
+		private String resourceUri;
+		private String resourceName;
+		private String permission;
 
 	@Transient
 	private List<Role> roles;

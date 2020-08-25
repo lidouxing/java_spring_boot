@@ -24,19 +24,24 @@
         <div id="sidebar-menu" class="main_menu_side hidden-print main_menu">
             <div class="menu_section">
                 <h3>General</h3>
+                <!--shiro:hasAnyRoles="admin,manager,staff"><a href="/common/dashboard"
+                这里是确定权限，这样就可以让不同角色去不同的页面以及不同的操作
+                -->
                 <ul class="nav side-menu">
-                    <li><a><i class="fa fa-home"></i> Dashboard </a>
+                    <li shiro:hasAnyRoles="admin,manager,staff"><a href="/common/dashboard"><i class="fa fa-home"></i> Dashboard </a>
+                    <li shiro:hasAnyRoles="admin,manager,staff"><a href="/common/dashboard2"><i class="fa fa-home"></i> Dashboard2 </a>
                     <li><a><i class="fa fa-user"></i> Account <span class="fa fa-chevron-down"></span></a>
                         <ul class="nav child_menu">
-                            <li><a href="index.html">Users</a></li>
-                            <li><a href="index2.html">Roles</a></li>
-                            <li><a href="index3.html">Resources</a></li>
+                            <li shiro:hasAnyRoles="admin,manager,staff"><a href="/account/profile">Profile</a></li>
+                            <li shiro:hasAnyRoles="admin,manager"><a href="/account/users">Users</a></li>
+                            <li shiro:hasAnyRoles="admin,manager"><a href="/account/roles">Roles</a></li>
+                            <li shiro:hasAnyRoles="admin,manager"><a href="/account/resources">Resources</a></li>
                         </ul>
                     </li>
                     <li><a><i class="fa fa-wrench"></i> Test <span class="fa fa-chevron-down"></span></a>
                         <ul class="nav child_menu">
-                            <li><a href="/test/index">Index</a></li>
-                            <li><a>Level One<span class="fa fa-chevron-down"></span></a>
+                            <li shiro:hasAnyRoles="admin,manager,staff"><a href="/test/index">Index</a></li>
+                            <li shiro:hasAnyRoles="admin,manager,staff"><a>Level One<span class="fa fa-chevron-down"></span></a>
                                 <ul class="nav child_menu">
                                     <li class="sub_menu"><a href="level2.html">Level Two</a>
                                     </li>
