@@ -1,0 +1,142 @@
+一、选择题（共12小题，每小题2.5分，共30分）
+	以下不是spring boot优点的是 ( D )
+		A．快速搭建项目
+		B．简化配置  
+		C．自动配置  
+		D．无需容器
+	Spring Boot配置，以下哪个优先级最高（A ）
+		A、外置：xx.jar同目录下/config/application.properties；
+		B、外置：xx.jar同目录下/config/application.yml；
+		C、内置：src/main/resources/config；
+		D、内置：src/main/resources
+	以下log日志级别哪个最高（D）
+		A、DEBUG
+		B、INFO
+		C、WARN
+		D、ERROR
+	以下不是spring boot的核心注解的是 ( D )
+		A.	@SpringBootConfiguration
+		B.	@EnableAutoConfiguration
+		C.	@ComponentScan
+		D.	@MapperScan
+	要使用springMVC的功能，需要导入那个包 ( D )
+		A．spring-boot-starter-jdbc  
+		B．spring-boot-starter-thymeleaf  
+		C．spring-boot-starter-web  
+		D．mybatis-spring-boot-starter
+	以下哪个注解不能加在类上 ( B)
+		A.	@Controller
+		B.	@ResponseBody
+		C.	@RestController
+		D.	@RequestMapping
+	当控制层上有@RestController注解时，方法中返回一个字符串“<h1>Hello</h1>”，浏览器调用的结果是 ( A )
+		A. 一级标题显示的Hello
+		B.	找不到Hello.html
+		C.	<h1>Hello</>
+		D.	Hello
+	SpringBoot项目中配置文件的格式 (C)
+		A．properties  
+		B．yml  
+		C．两者都可以
+	不是SpringBoot核心配置文件是（A）
+		A.	bootstrap
+		B.	application
+		C.	application-dev
+	前台使用json参数格式，控制器consumer、参数使用的注解是（A）
+		A、application/josn ---- @RequestBody
+		B、application/josn ---- @ModelAttribute
+		C、application/x-www-form-urlencoded ---- @RequestBody
+		D、application/x-www-form-urlencoded ---- @ModelAttribute
+	@Pointcut("execution(public * com.thornBird.sbd.modules.*.controller.*.*(..))")，第三个*代表（D）
+		A、代表返回类型不限
+		B、代表module下所有子包
+		C、代表所有类
+		D、代表所有方法
+	Url匹配风格中/admin*，以下哪个匹配不正确（A）
+		A、/admin
+		B、/admin1
+		C、/admin123
+		D、/admin/1
+	Mybatis框架中，插入数据使用那个注解（B）
+		A、@Update
+		B、@Insert
+		C、@Select
+		D、@InsertMapping
+
+二、填空题（共5小题，每小题5分，共25分）
+	获取配置文件的属性值，使用哪个注解___@Vaule_____________；
+	Java配置依赖的2个注解是____@Mapper______，____@Service_______;
+	Spring Boot修改tomcat端口号为9090应该怎么写？_server.port=9090___________;
+	自定义拦截器需要实现____ShiroFilterFactoryBean____接口；
+	过滤器需要使用__WebFilter_______注解;
+	上传文件，使用____接收文件对象，consumer使用_____;
+
+三、问答题（每题5分，共25分）
+	阐述 Spring Boot 特性，举一个例子来解释 Staters 的内容；
+		Spring Boot可以简化配置，不需要导入太多的依赖，可以通过注解的形式进行编写，
+	Mybatis传参中，#{*}、${*}的区别？
+		#{*}一般用于？--？这种内容的填写，而${*}就是属于字符串的拼接，但这种没有前者安全
+	简述Restful规则？
+	 	/api/user/{id} --- Get  获取自定用户信息
+		/api/user --- Post  增加用户信息
+		/api/user/{id} --- Delete 删除用户信息
+		/api/user/{id} --- Update 修改用户信息
+	简述Git使用流程，写几个常用Git命令？
+		1 在本地或者远程建立一个仓库，将需要的文件放到本地仓库中，进行提交于推送，选择需要推送的文件以及推送信息。
+		2 git clone ---下载远程仓库
+	简述shiro两大功能实现流程；
+		1 配置：导入jar以及进行全局配置，新一个Myrealm用来进行认真和授权，还要一个新的类WebconfigShiro来实现安全管理器，
+		2 认证：获取用户信息（一般是指账号和密码），在impl种使用SercurityUtils.Subject建立一个新的用户对象，
+		然后new一个令牌类去得到传来的数据，使用logn方法进入到认证里面去，然后引用dao层获取数据库的数据进行比对，返回。
+		3 授权：logn方法进入到授权，通过底层数据得到身份信息，然后数据返回。
+
+四、编程题（每题10分，共20分）
+	1、提供一个接口，返回 List<User> 列表，对该列表进行排序、保留10条数据；页面端使用 ajax post 方式提交请求，包装查询参数，获取接口返回数据，并遍历数据渲染到页面上 table 表格中；
+		1 后端：
+			countroller：
+				@Autowired
+				private UserService users;
+				@GetMapper(Value="/users",coums="application/json")
+				public Result<User> getUsers( @RepostBody SearchVo searchVo)){
+						return 	users.getUsersByUserId(searchVo);
+							}
+			Service：
+				Result<User> getUsers( SearchVo searchVo)
+			Impl：
+				@Autowired
+				private UserDao users;
+				@GetMapper("/users")
+				public Result<User> getUsers( SearchVo searchVo){
+					if(users.getUsers)(searchVo)==null){
+						return new Result<User>(
+              						  Result.ResultStatus.SUCCESS.status, "error.", user);
+						}
+						return new Result<User>(
+              						  Result.ResultStatus.SUCCESS.status, "success.", user);
+							}			
+			Dao：
+				@select("select form user ")
+				public List<User> getUsers(searchVo) ){
+						return 	users.getUsers(searchVo));
+							}
+	
+		2 ajax
+			$.ajax({
+           			 url : "/api/users",
+          			  type : "post",
+          			  contentType: "application/json",
+          			  data : JSON.stringify(user),
+          			  success : function (data) {
+             			   if (data.status == 200) {
+                		    location.href = "/account/users";
+                			} else {
+                 				   layer.msg(data.message, {icon: 0});
+             					   }
+        				    },
+         				   error : function (data) {
+               			 layer.msg(data.responseText, {icon: 0});
+           		 }
+       		 });
+   	 }
+		3table 
+	2、设计一套购物车接口，以 Cookie 或者 redis 实现
