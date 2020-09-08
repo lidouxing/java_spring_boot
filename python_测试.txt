@@ -1,0 +1,87 @@
+一，选择题
+	以下哪个不是python解释器
+		CPython
+		IPython
+		Jython
+		py----------
+	下列哪个表达式在Python中是非法的？
+		x = y = z = 1
+		x = (y = z + 1)
+		x, y = y, x-------
+		x += y
+	print("%d %% %d"%(3, 5)) 输出结果是？
+		3 % 5
+		3 %% 5--------
+		2
+		1
+	“今年第一季度GDP提高了x%”，x为float值，格式化字符串，x保留两位小数，下面哪个是正确的？
+		print("今年第一季度GDP提高了%.2f"%(22.234,))-----------
+		print("今年第一季度GDP提高了%.2f%"%(22.234,))
+		print("今年第一季度GDP提高了%.2f%%"%(22.234,))
+		print("今年第一季度GDP提高了{0}%".format(22.234))
+	l = ["cdsa", 32, 33.2, None, True];l.pop();print(l);打印结果是：
+		["cdsa", 32, 33.2, True]
+		["cdsa", 32, None, True]
+		["cdsa", 32, 33.2, None]-----------
+		[32, 33.2, None, True]
+	print(15 // 2);
+		1
+		7-----------
+		7.5
+		8
+	下面哪个不是 python 的数据类型
+		int
+		str----------
+		set
+		double
+	*args 代表什么参数
+		位置参数
+		可变参数-----------
+		可变关键字参数
+		命名关键字参数
+	函数多个返回值，实际上返回的是什么数据类型？
+		list
+		set
+		tuple-----------
+		dict
+	安装Django2.0.7版本，使用的什么命令？
+		pip install django
+		pip install django=2.0.7
+		pip install django==2.0.7-----------
+		pip install django version=2.0.7
+
+二、填空题
+	字符串前面添加u、r、b分别代表什么？
+		u代表Unicode编码；r代表普通字符；b就是bytes。
+	requests模块请求远程服务器，如何设置相应编码？
+	windows下执行python的方式；
+		在cmd中，使用python命令就可以进入到python交互页面
+	创建python package，会自动生成什么文件？
+		会生成__init__.py文件。
+	python变量作用域有哪些？
+		L （Local） 局部作用域
+		E （Enclosing） 闭包函数外的函数中
+		G （Global） 全局作用域
+		B （Built-in） 内建作用域
+三、问答题
+	python命名规则？
+		开头不能有数字，汉子，特殊符号以及python中的一些关键字。
+		可以使用驼峰法，以及两个单词之间使用_(下划线)进行连接。
+	set删除操作中，pop、remove的区别？
+		pop是删除最后一位，remove是删除最前一位。
+	list使用+=和append函数的区别？
+		list使用+=可以将数据直接加到最后一位，而append则是可以根据位置指定加入。
+	使用bs4解析响应内容，获取某div（class为aaa）下所有span节点；
+	简述Django操作流程、组件的作用；
+		先下载Django，在cmd中执行Django-admin startproject  xx(文件名) 建立文件，可以使用
+		python manage.py runserver 0.0.0.0:8080指定端口号并允许，如果不改变端口号就默认是8000，
+		然后就可以在新建的文件容器中设置我们需要的参数，如设置数据库连接参数，静态资源路径等。然后
+		在于manage.py同级目录下使用Django-admin startapp  yy(文件名) 建立app文件，这是一个模型，可以实现
+		数据之间的交流。
+
+四、编程题
+	定义一个函数，接受 0 个或多个参数，返回累计乘积；
+		
+	定义一个函数，去掉字符串前后的空格；
+		str = '  fresgsg  '
+		str2 = str.strip()
