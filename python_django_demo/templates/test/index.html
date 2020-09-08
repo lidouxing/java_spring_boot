@@ -1,0 +1,66 @@
+{% extends "index.html"%}
+
+{% block template %}
+    <div class="right_col" role="main">
+        <h3>获取变量</h3>
+        <!-- 字符串 -->
+        Hello world!!!! {{ name }}<br/>
+        <!-- list -->
+        Name list: {{ name_list }} ---- {{ name_list.0 }}<br/>
+        <!-- 对象取值 -->
+        Person:{{ person }} ---- {{ person.name }}<br/>
+        <h3>过滤器</h3>
+        转小写：{{ name_list | lower }}<br/>
+        列表第一个元素转大写：{{ name_list | first | upper }}<br/>
+        字符串截取：{{ name_list | first | slice:"2" }}<br/>
+        字符串截取：{{ name | truncatewords:'2' }}<br/>
+        字符串省略号代替：{{ name | truncatechars:2 }}<br>
+        字符串长度：{{ person.name | length }}<br/>
+        默认值：{{ person.teacher | default:"Hyman" }}<br/>
+        时间格式化：{{ birthday }} ---- {{ birthday | date:"F j, Y" }} ----
+        {{ birthday | date:"Y-m-d H:i:s" }}<br/>
+        文件大小格式化：{{ number | filesizeformat }}<br/>
+        标签字符串：<a href="{{ url }}">点击跳转</a>
+        <h3>If标签</h3>
+        {% if isman %}
+            man
+        {% endif %}
+
+        {% if person.age > 20 %}
+            {{ person.age }}
+        {% endif %}
+
+        {% if age <= 10 %}
+            儿童
+        {% elif 10 < age and age <= 30 %}
+            青年
+        {% else %}
+            其他
+        {% endif %}
+
+        {% ifequal person person1 %}
+            WellCome {{ person.name }}
+        {% endifequal %}
+
+        <h3>For标签</h3>
+        <ur>
+            {% for item in name_list %}
+                <li>{{ item }}</li>
+            {% endfor %}
+        </ur>
+        <table>
+            <thead><td>id</td><td>name</td></thead>
+            {% for item in name_list %}
+                <tr><td>{{ forloop.counter }}</td><td>{{ item }}</td></tr>
+            {% endfor %}
+        </table>
+        <select>
+            {% for item in name_list %}
+                <option>{{ item }}</option>
+            {% endfor %}
+        </select><br>
+        {% for key,value in person.items %}
+            {{ key }} ---- {{ value }}
+        {% endfor %}
+    </div>
+{% endblock template %}

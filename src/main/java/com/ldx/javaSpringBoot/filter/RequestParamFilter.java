@@ -41,7 +41,7 @@ public class RequestParamFilter implements Filter {
         HttpServletRequest httpServletRequest=(HttpServletRequest) servletRequest;
         //查看getParameterMap的类型是Map<String,String[]>
 //       Map<String,String[]> paramMap=httpServletRequest.getParameterMap();
-//       paramMap.put("param",new String[]{"***"});//只到这里的话会报错，因为这个是被锁住，所以需要其他方法来操作
+//       paramMap.put("param",new String[]{"***"});//只到这里的话会报错，因为这个是被锁住，所以一般需要将配置文件的优先级换成DEBUG
 
         //提供了包装类值的替换
         //重写了getParameter方法,外部就可以调用这个方法,name就是test中的getParameter，还要将全局配置文件INFO换成DEBUG

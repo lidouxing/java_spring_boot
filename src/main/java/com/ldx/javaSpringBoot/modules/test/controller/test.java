@@ -159,7 +159,7 @@ public class test {
         if (file.isEmpty()){
           redirectAttributes.addFlashAttribute("message","please select file");//传到前端的message出现的字段
           return "redirect:/test/index";
-      }
+    }
         //当文件上传出现问题跑出异常
        try {
            String filePath="F:\\File\\"+file.getOriginalFilename();//写文件路径以及文件名
@@ -188,7 +188,7 @@ public class test {
         try {
             for (MultipartFile file : files) {
                 if (file.isEmpty()) {
-                    continue;//如果不存在就跳出for循环，后面的拷贝文件就不执行，直接进行下一次循环
+                    continue;//如果不存在就跳出本层for循环，后面的拷贝文件就不执行，直接进行下一次循环
                 }
                 //得到路径和文件名
                 String filesPath = "F:\\File\\" + file.getOriginalFilename();
