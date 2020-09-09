@@ -1,0 +1,768 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="905ae957-3757-402a-bc31-71e4c78c07d5" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/gzbd.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sqldialects.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common/result.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/css/custom.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/css/custom.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/img.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/picture.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/js/custom.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/js/custom.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/plugin/Chart.js/dist/Chart.bundle.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/plugin/Chart.js/dist/Chart.bundle.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/plugin/Chart.js/dist/Chart.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/plugin/Chart.js/dist/Chart.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/plugin/DateJS/build/date.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/plugin/Flot/build.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/plugin/Flot/excanvas.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/plugin/Flot/gulpfile.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/plugin/Flot/jquery.colorhelpers.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/plugin/Flot/jquery.flot.canvas.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/plugin/Flot/jquery.flot.categories.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/plugin/Flot/jquery.flot.crosshair.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/plugin/Flot/jquery.flot.errorbars.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/plugin/Flot/jquery.flot.fillbetween.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/plugin/Flot/jquery.flot.image.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/plugin/Flot/jquery.flot.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/plugin/Flot/jquery.flot.navigate.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/plugin/Flot/jquery.flot.pie.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/plugin/Flot/jquery.flot.resize.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/plugin/Flot/jquery.flot.selection.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/plugin/Flot/jquery.flot.stack.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/plugin/Flot/jquery.flot.symbol.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/plugin/Flot/jquery.flot.threshold.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/plugin/Flot/jquery.flot.time.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/plugin/Flot/jquery.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/plugin/Flot/lib/globalize.culture.en-US.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/plugin/Flot/lib/globalize.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/plugin/Flot/lib/jquery.event.drag.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/plugin/Flot/lib/jquery.mousewheel.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/plugin/bootbox/bootbox.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/plugin/bootstrap-daterangepicker/daterangepicker.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/plugin/bootstrap-daterangepicker/daterangepicker.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/plugin/bootstrap-progressbar/bootstrap-progressbar.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/plugin/bootstrap-progressbar/bootstrap-progressbar.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/plugin/bootstrap-progressbar/css/bootstrap-progressbar-3.3.4.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/plugin/bootstrap-progressbar/css/bootstrap-progressbar-3.3.4.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/plugin/bootstrap/css/bootstrap.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/plugin/bootstrap/js/bootstrap.bundle.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/plugin/bootstrap/js/bootstrap.bundle.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/plugin/bootstrap/js/bootstrap.bundle.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/plugin/bootstrap/js/bootstrap.bundle.min.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/plugin/datatables.net-bs/css/dataTables.bootstrap.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/plugin/datatables.net-bs/css/dataTables.bootstrap.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/plugin/datatables.net-bs/js/dataTables.bootstrap.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/plugin/datatables.net-bs/js/dataTables.bootstrap.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/plugin/datatables.net-buttons-bs/css/buttons.bootstrap.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/plugin/datatables.net-buttons-bs/css/buttons.bootstrap.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/plugin/datatables.net-buttons-bs/js/buttons.bootstrap.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/plugin/datatables.net-buttons-bs/js/buttons.bootstrap.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/plugin/datatables.net-buttons/js/buttons.colVis.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/plugin/datatables.net-buttons/js/buttons.colVis.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/plugin/datatables.net-buttons/js/buttons.flash.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/plugin/datatables.net-buttons/js/buttons.flash.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/plugin/datatables.net-buttons/js/buttons.html5.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/plugin/datatables.net-buttons/js/buttons.html5.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/plugin/datatables.net-buttons/js/buttons.print.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/plugin/datatables.net-buttons/js/buttons.print.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/plugin/datatables.net-buttons/js/dataTables.buttons.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/plugin/datatables.net-buttons/js/dataTables.buttons.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/plugin/datatables.net-fixedheader-bs/css/fixedHeader.bootstrap.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/plugin/datatables.net-fixedheader-bs/css/fixedHeader.bootstrap.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/plugin/datatables.net-fixedheader/js/dataTables.fixedHeader.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/plugin/datatables.net-fixedheader/js/dataTables.fixedHeader.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/plugin/datatables.net-keytable/js/dataTables.keyTable.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/plugin/datatables.net-keytable/js/dataTables.keyTable.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/plugin/datatables.net-responsive-bs/css/responsive.bootstrap.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/plugin/datatables.net-responsive-bs/css/responsive.bootstrap.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/plugin/datatables.net-responsive-bs/js/responsive.bootstrap.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/plugin/datatables.net-responsive/js/dataTables.responsive.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/plugin/datatables.net-responsive/js/dataTables.responsive.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/plugin/datatables.net-scroller-bs/css/scroller.bootstrap.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/plugin/datatables.net-scroller-bs/css/scroller.bootstrap.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/plugin/datatables.net-scroller/js/dataTables.scroller.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/plugin/datatables.net-scroller/js/dataTables.scroller.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/plugin/datatables.net/js/jquery.dataTables.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/plugin/datatables.net/js/jquery.dataTables.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/plugin/fastclick/lib/fastclick.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/plugin/fileinput/fileinput.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/plugin/fileinput/fileinput.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/plugin/flot-spline/.bower.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/plugin/flot-spline/LICENSE" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/plugin/flot-spline/bower.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/plugin/flot-spline/js/jquery.flot.spline.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/plugin/flot-spline/js/jquery.flot.spline.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/plugin/flot-spline/package.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/plugin/flot.curvedlines/curvedLines.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/plugin/flot.orderbars/js/jquery.flot.orderBars.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/plugin/font-awesome/css/font-awesome.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/plugin/font-awesome/fonts/FontAwesome.otf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/plugin/font-awesome/fonts/fontawesome-webfont.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/plugin/font-awesome/fonts/fontawesome-webfont.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/plugin/font-awesome/fonts/fontawesome-webfont.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/plugin/font-awesome/fonts/fontawesome-webfont.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/plugin/font-awesome/fonts/fontawesome-webfont.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/plugin/gauge.js/dist/gauge.coffee" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/plugin/gauge.js/dist/gauge.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/plugin/gauge.js/dist/gauge.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/plugin/iCheck/icheck.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/plugin/iCheck/icheck.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/plugin/iCheck/skins/flat/green.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/plugin/iCheck/skins/flat/green.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/plugin/iCheck/skins/flat/green@2x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/plugin/jquery/jquery.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/plugin/jqvmap/dist/jquery.vmap.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/plugin/jqvmap/dist/jquery.vmap.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/plugin/jqvmap/dist/jqvmap.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/plugin/jqvmap/dist/jqvmap.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/plugin/jqvmap/dist/maps/continents/jquery.vmap.africa.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/plugin/jqvmap/dist/maps/continents/jquery.vmap.asia.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/plugin/jqvmap/dist/maps/continents/jquery.vmap.australia.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/plugin/jqvmap/dist/maps/continents/jquery.vmap.europe.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/plugin/jqvmap/dist/maps/continents/jquery.vmap.north-america.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/plugin/jqvmap/dist/maps/continents/jquery.vmap.south-america.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/plugin/jqvmap/dist/maps/jquery.vmap.algeria.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/plugin/jqvmap/dist/maps/jquery.vmap.argentina.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/plugin/jqvmap/dist/maps/jquery.vmap.brazil.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/plugin/jqvmap/dist/maps/jquery.vmap.canada.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/plugin/jqvmap/dist/maps/jquery.vmap.europe.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/plugin/jqvmap/dist/maps/jquery.vmap.france.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/plugin/jqvmap/dist/maps/jquery.vmap.germany.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/plugin/jqvmap/dist/maps/jquery.vmap.greece.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/plugin/jqvmap/dist/maps/jquery.vmap.iran.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/plugin/jqvmap/dist/maps/jquery.vmap.iraq.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/plugin/jqvmap/dist/maps/jquery.vmap.russia.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/plugin/jqvmap/dist/maps/jquery.vmap.tunisia.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/plugin/jqvmap/dist/maps/jquery.vmap.turkey.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/plugin/jqvmap/dist/maps/jquery.vmap.usa.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/plugin/jqvmap/dist/maps/jquery.vmap.world.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/plugin/jqvmap/examples/images/background.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/plugin/jqvmap/examples/images/flag.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/plugin/jqvmap/examples/images/globe.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/plugin/jqvmap/examples/images/marker/black.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/plugin/jqvmap/examples/images/marker/blue.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/plugin/jqvmap/examples/images/marker/green.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/plugin/jqvmap/examples/images/marker/grey.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/plugin/jqvmap/examples/images/marker/orange.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/plugin/jqvmap/examples/images/marker/purple.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/plugin/jqvmap/examples/images/marker/red.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/plugin/jqvmap/examples/images/marker/white.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/plugin/jqvmap/examples/images/marker/yellow.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/plugin/jqvmap/examples/images/thumb.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/plugin/jqvmap/examples/images/tip.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/plugin/jqvmap/examples/js/jquery.vmap.sampledata.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/plugin/moment/min/moment.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/plugin/morris.js/morris.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/plugin/morris.js/morris.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/plugin/morris.js/morris.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/plugin/nprogress/nprogress.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/plugin/nprogress/nprogress.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/plugin/raphael/raphael.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/plugin/raphael/raphael.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/plugin/raphael/raphael.no-deps.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/plugin/raphael/raphael.no-deps.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/plugin/raphael/webpack.config.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/plugin/skycons/skycons.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/account/login.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/account/register.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/common/dashboard.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/fragments/footer.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/fragments/header.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/fragments/sideBar.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/hello_world.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/indexSimple.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/test/hello_world.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/test/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../python_django_demo/.idea/python_django_demo.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../python_django_demo/python_django_demo/xx.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../python_django_demo/static/css/custom.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../python_django_demo/static/css/custom.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../python_django_demo/static/images/img.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../python_django_demo/static/images/picture.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../python_django_demo/static/js/custom.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../python_django_demo/static/js/custom.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../python_django_demo/static/plugin/Chart.js/dist/Chart.bundle.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../python_django_demo/static/plugin/Chart.js/dist/Chart.bundle.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../python_django_demo/static/plugin/Chart.js/dist/Chart.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../python_django_demo/static/plugin/Chart.js/dist/Chart.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../python_django_demo/static/plugin/DateJS/build/date.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../python_django_demo/static/plugin/Flot/build.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../python_django_demo/static/plugin/Flot/excanvas.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../python_django_demo/static/plugin/Flot/gulpfile.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../python_django_demo/static/plugin/Flot/jquery.colorhelpers.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../python_django_demo/static/plugin/Flot/jquery.flot.canvas.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../python_django_demo/static/plugin/Flot/jquery.flot.categories.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../python_django_demo/static/plugin/Flot/jquery.flot.crosshair.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../python_django_demo/static/plugin/Flot/jquery.flot.errorbars.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../python_django_demo/static/plugin/Flot/jquery.flot.fillbetween.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../python_django_demo/static/plugin/Flot/jquery.flot.image.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../python_django_demo/static/plugin/Flot/jquery.flot.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../python_django_demo/static/plugin/Flot/jquery.flot.navigate.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../python_django_demo/static/plugin/Flot/jquery.flot.pie.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../python_django_demo/static/plugin/Flot/jquery.flot.resize.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../python_django_demo/static/plugin/Flot/jquery.flot.selection.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../python_django_demo/static/plugin/Flot/jquery.flot.stack.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../python_django_demo/static/plugin/Flot/jquery.flot.symbol.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../python_django_demo/static/plugin/Flot/jquery.flot.threshold.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../python_django_demo/static/plugin/Flot/jquery.flot.time.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../python_django_demo/static/plugin/Flot/jquery.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../python_django_demo/static/plugin/Flot/lib/globalize.culture.en-US.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../python_django_demo/static/plugin/Flot/lib/globalize.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../python_django_demo/static/plugin/Flot/lib/jquery.event.drag.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../python_django_demo/static/plugin/Flot/lib/jquery.mousewheel.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../python_django_demo/static/plugin/bootbox/bootbox.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../python_django_demo/static/plugin/bootstrap-daterangepicker/daterangepicker.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../python_django_demo/static/plugin/bootstrap-daterangepicker/daterangepicker.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../python_django_demo/static/plugin/bootstrap-progressbar/bootstrap-progressbar.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../python_django_demo/static/plugin/bootstrap-progressbar/bootstrap-progressbar.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../python_django_demo/static/plugin/bootstrap-progressbar/css/bootstrap-progressbar-3.3.4.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../python_django_demo/static/plugin/bootstrap-progressbar/css/bootstrap-progressbar-3.3.4.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../python_django_demo/static/plugin/bootstrap/css/bootstrap.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../python_django_demo/static/plugin/bootstrap/js/bootstrap.bundle.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../python_django_demo/static/plugin/bootstrap/js/bootstrap.bundle.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../python_django_demo/static/plugin/bootstrap/js/bootstrap.bundle.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../python_django_demo/static/plugin/bootstrap/js/bootstrap.bundle.min.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../python_django_demo/static/plugin/datatables.net-bs/css/dataTables.bootstrap.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../python_django_demo/static/plugin/datatables.net-bs/css/dataTables.bootstrap.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../python_django_demo/static/plugin/datatables.net-bs/js/dataTables.bootstrap.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../python_django_demo/static/plugin/datatables.net-bs/js/dataTables.bootstrap.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../python_django_demo/static/plugin/datatables.net-buttons-bs/css/buttons.bootstrap.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../python_django_demo/static/plugin/datatables.net-buttons-bs/css/buttons.bootstrap.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../python_django_demo/static/plugin/datatables.net-buttons-bs/js/buttons.bootstrap.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../python_django_demo/static/plugin/datatables.net-buttons-bs/js/buttons.bootstrap.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../python_django_demo/static/plugin/datatables.net-buttons/js/buttons.colVis.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../python_django_demo/static/plugin/datatables.net-buttons/js/buttons.colVis.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../python_django_demo/static/plugin/datatables.net-buttons/js/buttons.flash.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../python_django_demo/static/plugin/datatables.net-buttons/js/buttons.flash.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../python_django_demo/static/plugin/datatables.net-buttons/js/buttons.html5.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../python_django_demo/static/plugin/datatables.net-buttons/js/buttons.html5.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../python_django_demo/static/plugin/datatables.net-buttons/js/buttons.print.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../python_django_demo/static/plugin/datatables.net-buttons/js/buttons.print.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../python_django_demo/static/plugin/datatables.net-buttons/js/dataTables.buttons.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../python_django_demo/static/plugin/datatables.net-buttons/js/dataTables.buttons.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../python_django_demo/static/plugin/datatables.net-fixedheader-bs/css/fixedHeader.bootstrap.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../python_django_demo/static/plugin/datatables.net-fixedheader-bs/css/fixedHeader.bootstrap.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../python_django_demo/static/plugin/datatables.net-fixedheader/js/dataTables.fixedHeader.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../python_django_demo/static/plugin/datatables.net-fixedheader/js/dataTables.fixedHeader.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../python_django_demo/static/plugin/datatables.net-keytable/js/dataTables.keyTable.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../python_django_demo/static/plugin/datatables.net-keytable/js/dataTables.keyTable.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../python_django_demo/static/plugin/datatables.net-responsive-bs/css/responsive.bootstrap.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../python_django_demo/static/plugin/datatables.net-responsive-bs/css/responsive.bootstrap.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../python_django_demo/static/plugin/datatables.net-responsive-bs/js/responsive.bootstrap.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../python_django_demo/static/plugin/datatables.net-responsive/js/dataTables.responsive.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../python_django_demo/static/plugin/datatables.net-responsive/js/dataTables.responsive.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../python_django_demo/static/plugin/datatables.net-scroller-bs/css/scroller.bootstrap.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../python_django_demo/static/plugin/datatables.net-scroller-bs/css/scroller.bootstrap.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../python_django_demo/static/plugin/datatables.net-scroller/js/dataTables.scroller.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../python_django_demo/static/plugin/datatables.net-scroller/js/dataTables.scroller.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../python_django_demo/static/plugin/datatables.net/js/jquery.dataTables.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../python_django_demo/static/plugin/datatables.net/js/jquery.dataTables.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../python_django_demo/static/plugin/fastclick/lib/fastclick.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../python_django_demo/static/plugin/fileinput/fileinput.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../python_django_demo/static/plugin/fileinput/fileinput.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../python_django_demo/static/plugin/flot-spline/.bower.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../python_django_demo/static/plugin/flot-spline/LICENSE" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../python_django_demo/static/plugin/flot-spline/bower.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../python_django_demo/static/plugin/flot-spline/js/jquery.flot.spline.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../python_django_demo/static/plugin/flot-spline/js/jquery.flot.spline.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../python_django_demo/static/plugin/flot-spline/package.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../python_django_demo/static/plugin/flot.curvedlines/curvedLines.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../python_django_demo/static/plugin/flot.orderbars/js/jquery.flot.orderBars.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../python_django_demo/static/plugin/font-awesome/css/font-awesome.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../python_django_demo/static/plugin/font-awesome/fonts/FontAwesome.otf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../python_django_demo/static/plugin/font-awesome/fonts/fontawesome-webfont.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../python_django_demo/static/plugin/font-awesome/fonts/fontawesome-webfont.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../python_django_demo/static/plugin/font-awesome/fonts/fontawesome-webfont.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../python_django_demo/static/plugin/font-awesome/fonts/fontawesome-webfont.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../python_django_demo/static/plugin/font-awesome/fonts/fontawesome-webfont.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../python_django_demo/static/plugin/gauge.js/dist/gauge.coffee" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../python_django_demo/static/plugin/gauge.js/dist/gauge.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../python_django_demo/static/plugin/gauge.js/dist/gauge.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../python_django_demo/static/plugin/iCheck/icheck.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../python_django_demo/static/plugin/iCheck/icheck.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../python_django_demo/static/plugin/iCheck/skins/flat/green.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../python_django_demo/static/plugin/iCheck/skins/flat/green.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../python_django_demo/static/plugin/iCheck/skins/flat/green@2x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../python_django_demo/static/plugin/jquery/jquery.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../python_django_demo/static/plugin/jqvmap/dist/jquery.vmap.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../python_django_demo/static/plugin/jqvmap/dist/jquery.vmap.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../python_django_demo/static/plugin/jqvmap/dist/jqvmap.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../python_django_demo/static/plugin/jqvmap/dist/jqvmap.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../python_django_demo/static/plugin/jqvmap/dist/maps/continents/jquery.vmap.africa.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../python_django_demo/static/plugin/jqvmap/dist/maps/continents/jquery.vmap.asia.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../python_django_demo/static/plugin/jqvmap/dist/maps/continents/jquery.vmap.australia.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../python_django_demo/static/plugin/jqvmap/dist/maps/continents/jquery.vmap.europe.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../python_django_demo/static/plugin/jqvmap/dist/maps/continents/jquery.vmap.north-america.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../python_django_demo/static/plugin/jqvmap/dist/maps/continents/jquery.vmap.south-america.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../python_django_demo/static/plugin/jqvmap/dist/maps/jquery.vmap.algeria.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../python_django_demo/static/plugin/jqvmap/dist/maps/jquery.vmap.argentina.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../python_django_demo/static/plugin/jqvmap/dist/maps/jquery.vmap.brazil.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../python_django_demo/static/plugin/jqvmap/dist/maps/jquery.vmap.canada.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../python_django_demo/static/plugin/jqvmap/dist/maps/jquery.vmap.europe.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../python_django_demo/static/plugin/jqvmap/dist/maps/jquery.vmap.france.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../python_django_demo/static/plugin/jqvmap/dist/maps/jquery.vmap.germany.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../python_django_demo/static/plugin/jqvmap/dist/maps/jquery.vmap.greece.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../python_django_demo/static/plugin/jqvmap/dist/maps/jquery.vmap.iran.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../python_django_demo/static/plugin/jqvmap/dist/maps/jquery.vmap.iraq.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../python_django_demo/static/plugin/jqvmap/dist/maps/jquery.vmap.russia.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../python_django_demo/static/plugin/jqvmap/dist/maps/jquery.vmap.tunisia.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../python_django_demo/static/plugin/jqvmap/dist/maps/jquery.vmap.turkey.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../python_django_demo/static/plugin/jqvmap/dist/maps/jquery.vmap.usa.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../python_django_demo/static/plugin/jqvmap/dist/maps/jquery.vmap.world.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../python_django_demo/static/plugin/jqvmap/examples/images/background.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../python_django_demo/static/plugin/jqvmap/examples/images/flag.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../python_django_demo/static/plugin/jqvmap/examples/images/globe.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../python_django_demo/static/plugin/jqvmap/examples/images/marker/black.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../python_django_demo/static/plugin/jqvmap/examples/images/marker/blue.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../python_django_demo/static/plugin/jqvmap/examples/images/marker/green.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../python_django_demo/static/plugin/jqvmap/examples/images/marker/grey.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../python_django_demo/static/plugin/jqvmap/examples/images/marker/orange.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../python_django_demo/static/plugin/jqvmap/examples/images/marker/purple.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../python_django_demo/static/plugin/jqvmap/examples/images/marker/red.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../python_django_demo/static/plugin/jqvmap/examples/images/marker/white.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../python_django_demo/static/plugin/jqvmap/examples/images/marker/yellow.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../python_django_demo/static/plugin/jqvmap/examples/images/thumb.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../python_django_demo/static/plugin/jqvmap/examples/images/tip.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../python_django_demo/static/plugin/jqvmap/examples/js/jquery.vmap.sampledata.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../python_django_demo/static/plugin/moment/min/moment.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../python_django_demo/static/plugin/morris.js/morris.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../python_django_demo/static/plugin/morris.js/morris.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../python_django_demo/static/plugin/morris.js/morris.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../python_django_demo/static/plugin/nprogress/nprogress.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../python_django_demo/static/plugin/nprogress/nprogress.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../python_django_demo/static/plugin/raphael/raphael.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../python_django_demo/static/plugin/raphael/raphael.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../python_django_demo/static/plugin/raphael/raphael.no-deps.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../python_django_demo/static/plugin/raphael/raphael.no-deps.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../python_django_demo/static/plugin/raphael/webpack.config.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../python_django_demo/static/plugin/skycons/skycons.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../python_django_demo/templates/account/login.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../python_django_demo/templates/account/register.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../python_django_demo/templates/common/dashboard.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../python_django_demo/templates/fragments/footer.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../python_django_demo/templates/fragments/header.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../python_django_demo/templates/fragments/sideBar.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../python_django_demo/templates/hello_world.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../python_django_demo/templates/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../python_django_demo/templates/indexSimple.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../python_django_demo/templates/test/hello_world.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../python_django_demo/templates/test/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../src/main/java/com/ldx/javaSpringBoot/modules/account/controller/TestThread.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/java/com/ldx/javaSpringBoot/filter/RequestParamFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/../src/main/java/com/ldx/javaSpringBoot/filter/RequestParamFilter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/java/com/ldx/javaSpringBoot/modules/account/dao/UserDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/../src/main/java/com/ldx/javaSpringBoot/modules/account/dao/UserDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/java/com/ldx/javaSpringBoot/modules/test/controller/CountryController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../src/main/java/com/ldx/javaSpringBoot/modules/test/controller/CountryController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/java/com/ldx/javaSpringBoot/modules/test/controller/test.java" beforeDir="false" afterPath="$PROJECT_DIR$/../src/main/java/com/ldx/javaSpringBoot/modules/test/controller/test.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/java/com/ldx/javaSpringBoot/modules/test/entity/City.java" beforeDir="false" afterPath="$PROJECT_DIR$/../src/main/java/com/ldx/javaSpringBoot/modules/test/entity/City.java" afterDir="false" />
+    </list>
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <option name="HIDDEN_KINDS">
+      <set />
+    </option>
+    <expand>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="test@localhost" type="feb32156:DbDataSourceImpl" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="test@localhost" type="feb32156:DbDataSourceImpl" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="test@localhost" type="feb32156:DbDataSourceImpl" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="test: schema" type="76f4a085:MysqlImplModel$Schema" />
+      </path>
+    </expand>
+    <select />
+  </component>
+  <component name="DjangoConsoleOptions" custom-start-script="import sys; print('Python %s on %s' % (sys.version, sys.platform))&#10;import django; print('Django %s' % django.get_version())&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;if 'setup' in dir(django): django.setup()&#10;import django_manage_shell; django_manage_shell.run(PROJECT_ROOT)">
+    <option name="myCustomStartScript" value="import sys; print('Python %s on %s' % (sys.version, sys.platform))&#10;import django; print('Django %s' % django.get_version())&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;if 'setup' in dir(django): django.setup()&#10;import django_manage_shell; django_manage_shell.run(PROJECT_ROOT)" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/gzbd/settings.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="245">
+              <caret line="125" lean-forward="true" selection-start-line="125" selection-end-line="125" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/gzbd/urls.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="48">
+              <caret line="34" lean-forward="true" selection-start-line="34" selection-end-line="43" selection-end-column="43" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/gzbdapp/views.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="131">
+              <caret line="43" column="3" lean-forward="true" selection-start-line="43" selection-start-column="3" selection-end-line="43" selection-end-column="3" />
+              <folding>
+                <element signature="e#71#121#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/gzbd/__init__.py" />
+        <option value="$PROJECT_DIR$/gzbdapp/models.py" />
+        <option value="$PROJECT_DIR$/gzbdapp/tests.py" />
+        <option value="$PROJECT_DIR$/../../../../Systeam/Anaconda3.1/Lib/site-packages/django/db/backends/mysql/base.py" />
+        <option value="$PROJECT_DIR$/gzbd/settings.py" />
+        <option value="$PROJECT_DIR$/templates/hello_world.html" />
+        <option value="$PROJECT_DIR$/utils/common.py" />
+        <option value="$PROJECT_DIR$/utils/result.py" />
+        <option value="$PROJECT_DIR$/gzbd/urls.py" />
+        <option value="$PROJECT_DIR$/gzbdapp/views.py" />
+        <option value="$PROJECT_DIR$/gzbd/xxx.py" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="1">
+    <option name="x" value="-8" />
+    <option name="width" value="1935" />
+    <option name="height" value="1038" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="Scope" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="gzbd" type="b2602c69:ProjectViewProjectNode" />
+              <item name="gzbd" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="gzbd" type="b2602c69:ProjectViewProjectNode" />
+              <item name="gzbd" type="462c0819:PsiDirectoryNode" />
+              <item name="gzbd" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="DatabaseDriversLRU" value="mysql" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="database.console.LAST_STATE" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\work\Project address\loadrepository\java_spring_boot\gzbd" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\work\Project address\loadrepository\java_spring_boot\gzbd\templates" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="Python.xxx">
+    <configuration name="xxx" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="gzbd" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/gzbd" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/gzbd/xxx.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="gzbd" type="Python.DjangoServer" factoryName="Django server">
+      <module name="gzbd" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+        <env name="DJANGO_SETTINGS_MODULE" value="gzbd.settings" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="launchJavascriptDebuger" value="false" />
+      <option name="port" value="8000" />
+      <option name="host" value="" />
+      <option name="additionalOptions" value="" />
+      <option name="browserUrl" value="" />
+      <option name="runTestServer" value="false" />
+      <option name="runNoReload" value="false" />
+      <option name="useCustomRunCommand" value="false" />
+      <option name="customRunCommand" value="" />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Python.xxx" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="905ae957-3757-402a-bc31-71e4c78c07d5" name="Default Changelist" comment="" />
+      <created>1599449245648</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1599449245648</updated>
+      <workItem from="1599449249564" duration="6532000" />
+      <workItem from="1599466869464" duration="10299000" />
+      <workItem from="1599525318861" duration="6095000" />
+      <workItem from="1599535799323" duration="2698000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="25624000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-6" y="0" width="1548" height="830" extended-state="1" />
+    <layout>
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.16778524" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49932975" weight="0.3286119" />
+      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.5657718" weight="0.40974212" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Database Console" order="7" weight="0.32933334" />
+      <window_info anchor="bottom" id="Docker" order="8" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="9" />
+      <window_info anchor="bottom" id="Database Changes" order="10" show_stripe_button="false" />
+      <window_info anchor="bottom" id="SQL Generator" order="11" weight="0.32933334" />
+      <window_info anchor="bottom" id="Terminal" order="12" />
+      <window_info anchor="bottom" id="Event Log" order="13" sideWeight="0.43422818" side_tool="true" visible="true" weight="0.40974212" />
+      <window_info anchor="bottom" id="Python Console" order="14" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="SciView" order="3" />
+      <window_info anchor="right" id="Database" order="4" visible="true" weight="0.020134227" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/gzbd$xxx.coverage" NAME="xxx Coverage Results" MODIFIED="1599549993346" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/gzbd" />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/manage.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="304">
+          <caret line="17" lean-forward="true" selection-start-line="17" selection-end-line="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/fragments/footer.html">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/fragments/header.html">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/fragments/sideBar.html">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/index.html">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/indexSimple.html">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/test/hello_world.html">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/cbca3fb0-6b92-4936-bd9e-8faa333e901c/console.sql">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="das://cbca3fb0-6b92-4936-bd9e-8faa333e901c/schema/test/table/gzbd_epidemic" />
+    <entry file="file://$PROJECT_DIR$/../../../../Systeam/Anaconda3.1/Lib/importlib/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="140">
+          <caret line="126" selection-start-line="126" selection-end-line="126" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/98f8716c-7d53-4799-8696-83780bd06721/console.sql">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/gzbdapp/apps.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/gzbd/asgi.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../../../Systeam/Anaconda3.1/Lib/site-packages/django/db/backends/mysql/base.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="19">
+          <caret line="32" column="48" selection-start-line="32" selection-start-column="48" selection-end-line="32" selection-end-column="48" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/gzbd/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret selection-end-line="5" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/gzbdapp/admin.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/gzbdapp/__init__.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/gzbd/wsgi.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/hello_world.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="3" selection-start-column="3" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/gzbdapp/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="21" selection-start-column="21" selection-end-line="3" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/test/index.html">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/gzbdapp/tests.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="133">
+          <caret line="14" selection-start-line="14" selection-end-line="15" selection-end-column="58" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/common/result.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="190">
+          <caret line="10" column="29" lean-forward="true" selection-start-line="10" selection-start-column="29" selection-end-line="10" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/gzbd/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="48">
+          <caret line="34" lean-forward="true" selection-start-line="34" selection-end-line="43" selection-end-column="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/gzbd/settings.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="245">
+          <caret line="125" lean-forward="true" selection-start-line="125" selection-end-line="125" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/gzbd/xxx.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/gzbdapp/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="131">
+          <caret line="43" column="3" lean-forward="true" selection-start-line="43" selection-start-column="3" selection-end-line="43" selection-end-column="3" />
+          <folding>
+            <element signature="e#71#121#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>
